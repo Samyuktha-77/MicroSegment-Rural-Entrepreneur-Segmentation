@@ -1,0 +1,4 @@
+cluster,record_count,average_loan,median_loan,average_term,median_term
+0,3852,296.85,250.0,43.0,43.0
+1,3966,410.06,300.0,15.7,14.0
+2,1233,2271.41,2400.0,42.76,43.0

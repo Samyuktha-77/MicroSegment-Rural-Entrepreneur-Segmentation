@@ -1,0 +1,21 @@
+# Dataset files (download separately)
+dataset/*.csv
+
+# Trained models and preprocessors
+*.joblib
+*.pkl
+
+# Python temporary files
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment and secrets
+.env
+
+# Generated row-level results
+results/clustered_business_loans.csv
+
+# Editor files
+.vscode/
