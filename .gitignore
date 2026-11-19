@@ -19,3 +19,7 @@ results/clustered_business_loans.csv
 
 # Editor files
 .vscode/
+
+# Include trained model files for Vercel deployment
+!models/kmeans_model.joblib
+!ml/preprocessor.joblib
