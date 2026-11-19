@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MicroSegment - Unsupervised segmentation of Indian microfinance loan profiles.">
+    <title>MicroSegment | Loan Profile Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="brand">
+            <span class="brand-icon">M</span>
+            <span>MicroSegment</span>
+        </a>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#clusters">Clusters</a>
+            <a href="#prediction">Prediction</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <span class="status">
+            <span class="status-dot"></span>
+            ML Model Ready
+        </span>
+    </header>
+
+    <main>
+        <section class="hero" id="dashboard">
+            <div class="hero-content">
+                <span class="eyebrow">MICROFINANCE ANALYTICS PLATFORM</span>
+                <h1>Understand borrower profiles.<br>
+                    <span>Discover meaningful segments.</span>
+                </h1>
+                <p>
+                    Explore historical Indian microfinance loan patterns
+                    using unsupervised machine learning and K-Means clustering.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#clusters" class="btn btn-primary">Explore Clusters →</a>
+                    <a href="#prediction" class="btn btn-secondary">Try Prediction</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="card-top">
+                    <span>MODEL OVERVIEW</span>
+                    <span class="live-tag">● ACTIVE</span>
+                </div>
+                <div class="model-name">K-Means</div>
+                <p>Unsupervised learning algorithm</p>
+                <div class="model-stats">
+                    <div>
+                        <strong>3</strong>
+                        <span>Clusters</span>
+                    </div>
+                    <div>
+                        <strong>9,051</strong>
+                        <span>Loan records</span>
+                    </div>
+                    <div>
+                        <strong>0.4924</strong>
+                        <span>Silhouette score</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="clusters">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DATASET OVERVIEW</span>
+                    <h2>Explore the data</h2>
+                    <p>Key statistics from the India-focused INR business-loan subset.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Total loan profiles</span>
+                    <strong>9,051</strong>
+                    <span class="stat-note">Historical records</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Average loan amount</span>
+                    <strong>₹596.62</strong>
+                    <span class="stat-note">INR subset</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Average loan term</span>
+                    <strong>31.78</strong>
+                    <span class="stat-note">Months</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Selected clusters</span>
+                    <strong>03</strong>
+                    <span class="stat-note">K-Means algorithm</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">UNSUPERVISED LEARNING</span>
+                    <h2>Three discovered segments</h2>
+                    <p>Explore the characteristics of each cluster.</p>
+                </div>
+            </div>
+
+            <div class="cluster-grid">
+                <article class="cluster-card cluster-one">
+                    <span class="cluster-number">CLUSTER 00</span>
+                    <h3>Smaller-loan profiles</h3>
+                    <p>Agriculture-focused profiles with longer loan terms.</p>
+                    <div class="cluster-detail">
+                        <span>Average loan</span>
+                        <strong>₹296.85</strong>
+                    </div>
+                    <div class="cluster-detail">
+                        <span>Average term</span>
+                        <strong>43 months</strong>
+                    </div>
+                    <div class="cluster-detail">
+                        <span>Records</span>
+                        <strong>3,852</strong>
+                    </div>
+                </article>
+
+                <article class="cluster-card cluster-two">
+                    <span class="cluster-number">CLUSTER 01</span>
+                    <h3>Shorter-term profiles</h3>
+                    <p>More diversified sector representation and shorter terms.</p>
+                    <div class="cluster-detail">
+                        <span>Average loan</span>
+                        <strong>₹410.06</strong>
+                    </div>
+                    <div class="cluster-detail">
+                        <span>Average term</span>
+                        <strong>15.7 months</strong>
+                    </div>
+                    <div class="cluster-detail">
+                        <span>Records</span>
+                        <strong>3,966</strong>
+                    </div>
+                </article>
+
+                <article class="cluster-card cluster-three">
+                    <span class="cluster-number">CLUSTER 02</span>
+                    <h3>Larger-loan profiles</h3>
+                    <p>Agriculture and food-focused profiles with larger loans.</p>
+                    <div class="cluster-detail">
+                        <span>Average loan</span>
+                        <strong>₹2,271.41</strong>
+                    </div>
+                    <div class="cluster-detail">
+                        <span>Average term</span>
+                        <strong>42.76 months</strong>
+                    </div>
+                    <div class="cluster-detail">
+                        <span>Records</span>
+                        <strong>1,233</strong>
+                    </div>
+                </article>
+            </div>
+            <p class="disclaimer">
+                Cluster IDs are algorithm-generated identifiers. Descriptions
+                summarize historical cluster profiles and are not borrower ratings.
+            </p>
+        </section>
+
+        <section class="section prediction-section" id="prediction">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">MACHINE LEARNING</span>
+                    <h2>Explore a loan profile</h2>
+                    <p>Enter loan details to discover its K-Means cluster.</p>
+                </div>
+            </div>
+
+            <div class="prediction-layout">
+                <form id="prediction-form" class="prediction-form">
+                    <label for="loan_amount">Loan amount (INR)</label>
+                    <input type="number" id="loan_amount" min="1"
+                           placeholder="Example: 500" required>
+
+                    <label for="term_in_months">Loan term (months)</label>
+                    <input type="number" id="term_in_months" min="1"
+                           placeholder="Example: 12" required>
+
+                    <label for="sector">Business sector</label>
+                    <select id="sector" required>
+                        <option value="">Select sector</option>
+                        <option>Agriculture</option>
+                        <option>Arts</option>
+                        <option>Clothing</option>
+                        <option>Construction</option>
+                        <option>Food</option>
+                        <option>Health</option>
+                        <option>Manufacturing</option>
+                        <option>Other</option>
+                        <option>Retail</option>
+                        <option>Services</option>
+                        <option>Transportation</option>
+                    </select>
+
+                    <label for="repayment_interval">Repayment interval</label>
+                    <select id="repayment_interval" required>
+                        <option value="">Select interval</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="bullet">Bullet</option>
+                        <option value="irregular">Irregular</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary predict-btn">
+                        Analyze Loan Profile →
+                    </button>
+
+                    <p id="form-message" class="form-message"></p>
+                </form>
+
+                <div class="prediction-result" id="prediction-result">
+                    <div class="result-icon">✦</div>
+                    <span class="eyebrow">PREDICTION RESULT</span>
+                    <h3>Your result will appear here</h3>
+                    <p>Submit the loan details to view the assigned cluster and its historical profile.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-section" id="about">
+            <span class="eyebrow">ABOUT THE PROJECT</span>
+            <h2>Data-driven segmentation, not credit scoring.</h2>
+            <p>
+                MicroSegment is an academic machine learning project that applies
+                unsupervised K-Means clustering to historical India-focused Kiva
+                loan records. It explores similarities in loan amount, loan term,
+                sector and repayment interval.
+            </p>
+            <p class="disclaimer">
+                The dataset is historical and does not verify that every borrower
+                is rural or that every loan represents a business. Cluster
+                assignments are not credit scores, repayment predictions or
+                loan approval recommendations.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="brand">
+            <span class="brand-icon">M</span>
+            <span>MicroSegment</span>
+        </a>
+        <p>Academic Machine Learning Project · 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
